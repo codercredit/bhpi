@@ -634,10 +634,10 @@
 	background: #222;
 }
 .theme-bg {
-	background: #A70F2B;
+	background: #81171B;
 }
 .primary-bg {
-	background: #222;
+	background: #6E0D11;
 }
 /* Color */
 .white-color {
@@ -651,6 +651,9 @@
 }
 .primary-color {
 	color: #222;
+}
+.secondary-color {
+	color: #DAC495;
 }
 /* black overlay */
 [data-overlay] {
