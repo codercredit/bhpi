@@ -1,32 +1,72 @@
 /* Normal desktop :1200px. */
-@media (min-width: 1200px) and (max-width: 1500px) {
-
-
-}
+@media (min-width: 1200px) and (max-width: 1500px) {}
 
 
 /* Normal desktop :992px. */
 @media (min-width: 992px) and (max-width: 1200px) {
 
+    .single-ins-mang {
+        display: inline-block;
+        margin-right: 15px;
+    }
+
+    .img-box {
+        width: 29%;
+    }
+
+    .footer-contacts ul li a {
+        font-size: 14px;
+    }
+
+    .footer-rec-notice .news-time {
+        font-size: 12px;
+    }
 
 }
 
- 
+
 /* Tablet desktop :768px. */
 @media (min-width: 768px) and (max-width: 991px) {
 
+    .logo img {
+        width: 100%;
+    }
 
+    .slider-bg {
+        min-height: 230px;
+    }
 }
 
- 
+
 /* small mobile :320px. */
 @media (max-width: 767px) {
 
- 
+    .logo img {
+        width: 100%;
+    }
+
+    .email {
+        display: block;
+    }
+
+    .phone {
+        margin-bottom: 10px;
+        display: block;
+    }
+
+    .latest-news-area {
+        margin-top: -109px;
+    }
+
+    .img-box {
+        width: 29%;
+    }
 }
- 
+
 /* Large Mobile :480px. */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-.container {width:450px}
- 
+    .container {
+        width: 450px
+    }
+
 }

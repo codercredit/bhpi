@@ -88,7 +88,50 @@
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     infinite: true,
-                    dots: true
+                    dots: false
+                }
+			},
+            {
+                breakpoint: 600,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+			},
+            {
+                breakpoint: 480,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+			}
+			// You can unslick at a given breakpoint now by adding:
+			// settings: "unslick"
+			// instead of a settings object
+		]
+    });
+    
+    // testimonilas-activation
+    $('.video-gallery-activation').slick({
+        dots: false,
+        arrows: true,
+        prevArrow: "<button type='button' class='slick-prev pull-left'><span class='left-arrow-main-slider'><i class='fas fa-caret-left'></i></span></button>",
+        nextArrow: "<button type='button' class='slick-next pull-right'><span class='right-arrow-main-slider'><i class='fas fa-caret-right'></i></span></button>",
+        infinite: true,
+        speed: 600,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    arrows: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: false
                 }
 			},
             {

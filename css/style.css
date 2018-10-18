@@ -324,9 +324,13 @@ label {
 .email a {
     color: #fff;
 }
+.email a:hover {
+	color: #DAC495;
+}
 
 .email i {
     margin-right: 10px;
+    color: #fff;
 }
 
 /*search-form*/
@@ -815,6 +819,35 @@ label {
 
 .box-hidden {
     display: none;
+}
+
+/*video-gallery*/
+.video-gallery-activation .slick-arrow {
+    position: absolute;
+    top: -55px;
+    z-index: 99;
+    right: 0;
+    border: 0;
+    padding: 0;
+    background: #F5F5F5;
+    height: 25px;
+    width: 25px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 15px;
+    color: #444;
+    cursor: pointer;
+    transition: .4s;
+    border-radius: 3px;
+}
+
+.video-gallery-activation .slick-prev {
+    right: 30px;
+}
+
+.video-gallery-activation .slick-arrow:hover {
+    background-color: rgba(167, 15, 43, 0.66);
+    color: #fff;
 }
 
 /*footer*/
