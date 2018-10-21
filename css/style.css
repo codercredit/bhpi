@@ -324,8 +324,9 @@ label {
 .email a {
     color: #fff;
 }
+
 .email a:hover {
-	color: #DAC495;
+    color: #DAC495;
 }
 
 .email i {
@@ -460,6 +461,20 @@ label {
     top: 0;
     right: -100%;
     left: inherit;
+}
+
+.main-menu .dropdown-menu {
+    margin: 0;
+    border: 0;
+    border-radius: 0;
+    background: #81171B;
+    padding: 0;
+    min-width: 11rem;
+}
+
+.dropdown-item {
+    padding: 1rem 1.5rem;
+    color: #fff;
 }
 
 /*slider*/

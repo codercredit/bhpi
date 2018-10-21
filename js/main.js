@@ -2,7 +2,6 @@
     "use strict";
 
 
-
     // One Page Nav
     var top_offset = $('.header-area').height() - 10;
     $('.main-menu nav ul').onePageNav({
@@ -112,7 +111,7 @@
 			// instead of a settings object
 		]
     });
-    
+
     // testimonilas-activation
     $('.video-gallery-activation').slick({
         dots: false,
@@ -226,7 +225,7 @@
 
     $(function () {
         $(".box-hidden").slice(0, 3).show();
-        
+
         $("#loadMore").on('click', function (e) {
             e.preventDefault();
             $(".box-hidden:hidden").slice(0, 3).slideDown();
