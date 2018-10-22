@@ -240,6 +240,10 @@
 
 
 
+    $('select').niceSelect();
+
+
+
 
     // scrollToTop
     $.scrollUp({

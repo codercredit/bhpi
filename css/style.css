@@ -1049,9 +1049,9 @@ label {
 }
 
 .page-title-break .latest-news-area {
-	padding: 15px 25px;
-	background: rgba(167, 15, 43, 0.85);
-	margin-top: 0px;
+    padding: 15px 25px;
+    background: rgba(167, 15, 43, 0.85);
+    margin-top: 0px;
 }
 
 .page-title-bg .breadcrumb-item + .breadcrumb-item::before {
@@ -1070,22 +1070,24 @@ label {
 }
 
 .page-title-bg .breadcrumb-item a {
-	color: #888;
+    color: #888;
 }
 
 .page-title-bg .breadcrumb {
-	background: 0;
-	padding: 0;
-	margin-bottom: 13px;
+    background: 0;
+    padding: 0;
+    margin-bottom: 13px;
     cursor: pointer;
 }
+
 .page-title-bg .breadcrumb > .active {
-	color: #81171B;
+    color: #81171B;
     cursor: pointer;
 }
 
 /* Full-width input fields */
-.new-registration input[type=text], input[type=password] {
+.new-registration input[type=text],
+input[type=password] {
     width: 100%;
     padding: 15px;
     margin: 5px 0 22px 0;
@@ -1095,7 +1097,90 @@ label {
 }
 
 /* Add a background color when the inputs get focus */
-.new-registration input[type=text]:focus, input[type=password]:focus {
+.new-registration input[type=text]:focus,
+input[type=password]:focus {
     background-color: #ddd;
     outline: none;
+}
+
+.student-information {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+.student-info-title {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.nice-select {
+    width: 100%;
+}
+
+.nice-select .list {
+    width: 100%;
+}
+
+.student-roll input {
+    -webkit-tap-highlight-color: transparent;
+    background-color: #fff;
+    border-radius: 5px;
+    border: solid 1px #e8e8e8;
+    box-sizing: border-box;
+    clear: both;
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: normal;
+    height: 42px;
+    line-height: 40px;
+    outline: none;
+    padding-left: 18px;
+    padding-right: 30px;
+    position: relative;
+    text-align: left !important;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.search-btn {
+    padding: 0;
+    width: 100%;
+    background: 0;
+    color: #444;
+    border: 1px solid #B4334B;
+    height: 42px;
+    border: ;
+    border-radius: 5px;
+}
+
+.search-btn:hover {
+    background: #B4334B;
+    color: #fff;
+}
+
+.search-student-info {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ccc;
+}
+
+.single-stu-info .table thead th {
+    vertical-align: bottom;
+    border-bottom: 0px solid #dee2e6;
+}
+.single-stu-info .table-view-btn {
+	padding: 0;
+	margin-top: -23px;
+	display: block;
+	padding-left: 15px;
+	border: 0;
 }

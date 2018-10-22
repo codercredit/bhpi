@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/nice-select.css">
     <link rel="stylesheet" href="css/default.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
@@ -167,7 +168,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-8 col-lg-8">
-                    <div class="student-information">
+                    <div class="student-information mb-30">
                         <div class="row">
                             <div class="col-xl-6">
                                 <div class="page-title-main student-info">
@@ -175,51 +176,99 @@
                                 </div>
                             </div>
                             <div class="col-xl-6">
-                                <div class="new-registration text-right">
-                                    <!-- Button trigger modal -->
-                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-                                        New Registration
-                                    </button>
-
-                                    <!-- Modal -->
-                                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                                        <div class="modal-dialog modal-dialog-centered" role="document">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <h5 class="modal-title" id="exampleModalLongTitle">New Registration</h5>
-                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                        <span aria-hidden="true">&times;</span>
-                                                    </button>
-                                                </div>
-                                                <div class="modal-body text-left">
-                                                    <p>Please fill in this form to create an account.</p>
-                                                    <hr>
-                                                    <label for="name"><b>Name</b></label>
-                                                    <input type="text" placeholder="Enter Name" name="name" required>
-                                                    
-                                                    <label for="roll"><b>Roll</b></label>
-                                                    <input type="text" placeholder="Enter Roll" name="roll" required>
-
-                                                    <label for="psw"><b>Password</b></label>
-                                                    <input type="password" placeholder="Enter Password" name="psw" required>
-
-                                                    <label for="psw-repeat"><b>Repeat Password</b></label>
-                                                    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-
-                                                    <label>
-                                                        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-                                                    </label>
-
-                                                    <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
-                                                </div>
-                                                <div class="modal-footer">
-                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                                    <button type="button" class="btn btn-primary">Save changes</button>
-                                                </div>
+                                <div class="sign-up-btn-link text-right">
+                                    <a href="login.html" class="btn">New Registration</a>                         
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="search-student-info mb-30">
+                                <form action="">
+                                    <div class="row">
+                                        <div class="col-xl-4">
+                                            <div class="department-list">
+                                                <select>
+                                                    <option data-display="Department">Department</option>
+                                                    <option value="1">Civil</option>
+                                                    <option value="2">Electronics</option>
+                                                    <option value="3">Computer</option>
+                                                    <option value="3">RAC</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4">
+                                            <div class="student-roll">
+                                                <form action="">
+                                                    <input type="search" placeholder="Your Roll">
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4">
+                                            <div class="student-roll">
+                                                <form action="">
+                                                    <button class="btn search-btn">Search</button>
+                                                </form>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="single-stu-info">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Name</th>
+                                            <th scope="col">Roll</th>
+                                            <th scope="col">Technology</th>
+                                            <th scope="col">Shift</th>
+                                            <th scope="col">Semester</th>
+                                            <th scope="col">CGPA</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Md Mehadi Hassan</th>
+                                            <td>627686</td>
+                                            <td>Computer</td>
+                                            <td>Second</td>
+                                            <td>First</td>
+                                            <td>3.11</td>
+                                            <td class="table-view-btn" rowspan="2">
+                                                <!-- Button trigger modal -->
+                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                                                    View
+                                                </button>
+
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="exampleModalLongTitle">New Registration</h5>
+                                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                    <span aria-hidden="true">&times;</span>
+                                                                </button>
+                                                            </div>
+                                                            <div class="modal-body text-left">
+                                                                
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                                <button type="button" class="btn btn-primary">Save changes</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
@@ -524,6 +573,7 @@
     <script src="js/one-page-nav-min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/ajax-form.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/jquery.scrollUp.min.js"></script>
     <script src="js/imagesloaded.pkgd.min.js"></script>
