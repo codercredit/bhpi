@@ -380,41 +380,43 @@ label {
     padding: 0;
 }
 
-.main-menu .navbar-nav .nav-link {
-    padding: 15px 20px;
+.main-menu ul li a {
+	color: #fff;
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 600;
+	padding: 20px 0;
+}
+
+.main-menu.main-menu-box ul li a {
+    color: #101352;
+    padding-top: 15px;
+}
+
+.main-menu.main-menu-box ul li:hover > a {
+    color: #2CB5DC;
+}
+
+.main-menu-box ul li a {
     color: #fff;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 14px;
-}
-
-.main-menu .navbar-nav .nav-item.active {
-    background-color: #A70F2B;
-    transition: .3s;
-}
-
-.main-menu .navbar-nav .nav-item.active::before {
-    content: "";
-    display: block;
-    width: 0;
-    height: 0;
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-    border-bottom: 8px solid #fff;
-    position: absolute;
-    left: 50%;
-    margin-left: -8px;
-    bottom: -1px;
-}
-
-.main-menu .navbar-nav .nav-item {
-    transition: .3s;
-    position: relative;
     display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 25px 0;
 }
 
-.main-menu .navbar-nav .nav-item:hover {
-    background-color: #A70F2B;
+.main-menu ul li {
+    display: inline-block;
+    margin-left: 50px;
+    position: relative;
+}
+
+.main-menu ul li:first-child {
+    margin-left: 0;
+}
+
+.main-menu ul li:hover > a {
+    color: #E88B83;
 }
 
 .main-menu ul li ul.submenu {
@@ -429,15 +431,21 @@ label {
     z-index: 9;
 }
 
-.main-menu ul li ul.submenu li a {
-    color: #ddd;
+.main-menu ul li ul.submenu li {
+    margin-left: 0;
     display: block;
-    padding: 10px 20px;
-    text-align: left;
-    font-size: 14px;
-    text-transform: capitalize;
-    font-weight: 500;
-    border-bottom: 1px solid #6E0D11;
+}
+
+
+.main-menu ul li ul.submenu li a {
+	color: #fff;
+	display: block;
+	padding: 10px 20px;
+	text-align: left;
+	font-size: 14px;
+	text-transform: capitalize;
+	font-weight: 600;
+	border-bottom: 1px solid #6E0D11;
 }
 
 .main-menu ul li ul.submenu li:last-child a {
@@ -456,24 +464,12 @@ label {
     padding-left: 24px;
 }
 
-.main-menu ul li:hover > ul.submenu .submenu.meunu-leve-2 {
-    top: 0;
-    right: -100%;
-    left: inherit;
+.mean-container a.meanmenu-reveal {
+    top: 39px;
 }
 
-.main-menu .dropdown-menu {
-    margin: 0;
-    border: 0;
-    border-radius: 0;
-    background: #81171B;
-    padding: 0;
-    min-width: 11rem;
-}
-
-.dropdown-item {
-    padding: 1rem 1.5rem;
-    color: #fff;
+.mean-container .mean-nav {
+	margin-top: 38px;
 }
 
 /*slider*/
@@ -1203,50 +1199,51 @@ input[type=password]:focus {
 /* STRUCTURE */
 
 .wrapper {
-  display: flex;
-  align-items: center;
-  flex-direction: column; 
-  justify-content: center;
-  width: 100%;
-  min-height: 100%;
-  padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-height: 100%;
+    padding: 20px;
 }
 
 #formContent {
-  -webkit-border-radius: 10px 10px 10px 10px;
-  border-radius: 10px 10px 10px 10px;
-  background: #fff;
-  padding: 30px;
-  position: relative;
-  padding: 0px;
-  -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
-  box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
-  text-align: center;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+    background: #fff;
+    padding: 30px;
+    position: relative;
+    padding: 0px;
+    -webkit-box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
+    text-align: center;
 }
 
 .student-signup-form {
-	-webkit-border-radius: 10px 10px 10px 10px;
-	border-radius: 10px 10px 10px 10px;
-	background: #fff;
-	position: relative;
-	padding: 0px;
-	box-shadow: 0 0px 40px 0 rgba(208, 208, 208, 0.3);
-	border: 0;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+    background: #fff;
+    position: relative;
+    padding: 0px;
+    box-shadow: 0 0px 40px 0 rgba(208, 208, 208, 0.3);
+    border: 0;
 }
+
 .student-signup-form .card-header {
-	border-radius: 0;
-	border: 0;
-	background: 0;
-	border-bottom: 1px solid #efefef;
+    border-radius: 0;
+    border: 0;
+    background: 0;
+    border-bottom: 1px solid #efefef;
 }
 
 #formFooter {
-  background-color: #f6f6f6;
-  border-top: 1px solid #dce8f1;
-  padding: 25px;
-  text-align: center;
-  -webkit-border-radius: 0 0 10px 10px;
-  border-radius: 0 0 10px 10px;
+    background-color: #f6f6f6;
+    border-top: 1px solid #dce8f1;
+    padding: 25px;
+    text-align: center;
+    -webkit-border-radius: 0 0 10px 10px;
+    border-radius: 0 0 10px 10px;
 }
 
 
@@ -1254,80 +1251,86 @@ input[type=password]:focus {
 /* TABS */
 
 h2.inactive {
-  color: #cccccc;
+    color: #cccccc;
 }
 
 h2.active {
-  color: #0d0d0d;
-  border-bottom: 2px solid #5fbae9;
+    color: #0d0d0d;
+    border-bottom: 2px solid #5fbae9;
 }
 
 
 
 /* FORM TYPOGRAPHY*/
 
-.student-login-form-style input[type=button], input[type=submit], input[type=reset]  {
-  background-color: #56baed;
-  border: none;
-  color: white;
-  padding: 15px 80px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  text-transform: uppercase;
-  font-size: 13px;
-  -webkit-box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
-  box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
-  -webkit-border-radius: 5px 5px 5px 5px;
-  border-radius: 5px 5px 5px 5px;
-  margin: 5px 20px 40px 20px;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+.student-login-form-style input[type=button],
+input[type=submit],
+input[type=reset] {
+    background-color: #56baed;
+    border: none;
+    color: white;
+    padding: 15px 80px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 13px;
+    -webkit-box-shadow: 0 10px 30px 0 rgba(95, 186, 233, 0.4);
+    box-shadow: 0 10px 30px 0 rgba(95, 186, 233, 0.4);
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    margin: 5px 20px 40px 20px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
-.student-login-form-style input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover  {
-  background-color: #39ace7;
+.student-login-form-style input[type=button]:hover,
+input[type=submit]:hover,
+input[type=reset]:hover {
+    background-color: #39ace7;
 }
 
-.student-login-form-style input[type=button]:active, input[type=submit]:active, input[type=reset]:active  {
-  -moz-transform: scale(0.95);
-  -webkit-transform: scale(0.95);
-  -o-transform: scale(0.95);
-  -ms-transform: scale(0.95);
-  transform: scale(0.95);
+.student-login-form-style input[type=button]:active,
+input[type=submit]:active,
+input[type=reset]:active {
+    -moz-transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+    -o-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    transform: scale(0.95);
 }
 
 .student-login-form-style input[type=text] {
-  background-color: #f6f6f6;
-  border: none;
-  color: #0d0d0d;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 5px;
-  width: 85%;
-  border: 2px solid #f6f6f6;
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -ms-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-  -webkit-border-radius: 5px 5px 5px 5px;
-  border-radius: 5px 5px 5px 5px;
+    background-color: #f6f6f6;
+    border: none;
+    color: #0d0d0d;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px;
+    width: 85%;
+    border: 2px solid #f6f6f6;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
 }
 
 .student-login-form-style input[type=text]:focus {
-  background-color: #fff;
-  border-bottom: 2px solid #5fbae9;
+    background-color: #fff;
+    border-bottom: 2px solid #5fbae9;
 }
 
 .student-login-form-style input[type=text]:placeholder {
-  color: #cccccc;
+    color: #cccccc;
 }
 
 
@@ -1336,157 +1339,189 @@ h2.active {
 
 /* Simple CSS3 Fade-in-down Animation */
 .fadeInDown {
-  -webkit-animation-name: fadeInDown;
-  animation-name: fadeInDown;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
 }
 
 @-webkit-keyframes fadeInDown {
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
 }
 
 @keyframes fadeInDown {
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
 }
 
 /* Simple CSS3 Fade-in Animation */
-@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
 
 .fadeIn {
-  opacity:0;
-  -webkit-animation:fadeIn ease-in 1;
-  -moz-animation:fadeIn ease-in 1;
-  animation:fadeIn ease-in 1;
+    opacity: 0;
+    -webkit-animation: fadeIn ease-in 1;
+    -moz-animation: fadeIn ease-in 1;
+    animation: fadeIn ease-in 1;
 
-  -webkit-animation-fill-mode:forwards;
-  -moz-animation-fill-mode:forwards;
-  animation-fill-mode:forwards;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
 
-  -webkit-animation-duration:1s;
-  -moz-animation-duration:1s;
-  animation-duration:1s;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    animation-duration: 1s;
 }
 
 .fadeIn.first {
-  -webkit-animation-delay: 0.4s;
-  -moz-animation-delay: 0.4s;
-  animation-delay: 0.4s;
+    -webkit-animation-delay: 0.4s;
+    -moz-animation-delay: 0.4s;
+    animation-delay: 0.4s;
 }
 
 .fadeIn.second {
-  -webkit-animation-delay: 0.6s;
-  -moz-animation-delay: 0.6s;
-  animation-delay: 0.6s;
+    -webkit-animation-delay: 0.6s;
+    -moz-animation-delay: 0.6s;
+    animation-delay: 0.6s;
 }
 
 .fadeIn.third {
-  -webkit-animation-delay: 0.8s;
-  -moz-animation-delay: 0.8s;
-  animation-delay: 0.8s;
+    -webkit-animation-delay: 0.8s;
+    -moz-animation-delay: 0.8s;
+    animation-delay: 0.8s;
 }
 
 .fadeIn.fourth {
-  -webkit-animation-delay: 1s;
-  -moz-animation-delay: 1s;
-  animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    animation-delay: 1s;
 }
 
 /* Simple CSS3 Fade-in Animation */
 .underlineHover:after {
-  display: block;
-  left: 0;
-  bottom: -10px;
-  width: 0;
-  height: 2px;
-  background-color: #56baed;
-  content: "";
-  transition: width 0.2s;
+    display: block;
+    left: 0;
+    bottom: -10px;
+    width: 0;
+    height: 2px;
+    background-color: #56baed;
+    content: "";
+    transition: width 0.2s;
 }
 
 .underlineHover:hover {
-  color: #0d0d0d;
+    color: #0d0d0d;
 }
 
-.underlineHover:hover:after{
-  width: 100%;
+.underlineHover:hover:after {
+    width: 100%;
 }
 
-h1{
-    color:#60a0ff;
+h1 {
+    color: #60a0ff;
 }
 
 /* OTHERS */
 
 *:focus {
     outline: none;
-} 
+}
 
 .form-ins-logo {
-	padding-top: 30px;
-	padding-bottom: 18px;
+    padding-top: 30px;
+    padding-bottom: 18px;
 }
+
 .form-ins-name {
-	font-size: 18px;
-	font-weight: 600;
-	color: #444;
-	margin-bottom: 20px;
-	line-height: 24px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 20px;
+    line-height: 24px;
 }
+
 .form-ins-name span {
-	color: #81171B;
-	font-weight: ;
+    color: #81171B;
+    font-weight: ;
 }
 
 /*teacher*/
 
 .teacher-thumb {
-	position: relative;
+    position: relative;
 }
+
 .teacher-thumb img {
-	width: 100%;
-	border-radius: 100%;
-	border: 6px solid rgba(238, 238, 238, 0.5);
-	position: relative;
+    width: 260px;
+    border-radius: 100%;
+    border: 6px solid rgba(238, 238, 238, 0.5);
+    position: relative;
     cursor: pointer;
+    height: 260px;
 }
 
 .teacher-thumb::before {
-	position: absolute;
-	content: "";
-	background: rgba(0,0,0,.7);
-	height: 10px;
-	width: 10px;
-	border-radius: 100%;
-	left: 0;
-	right: 0;
-	margin: auto;
-	z-index: 9;
-	top: 50%;
-	transform: translateY(-50%);
-	transition: .4s;
+    position: absolute;
+    content: "";
+    background: rgba(0, 0, 0, .7);
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 9;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: .4s;
     opacity: 0;
     visibility: hidden;
     cursor: pointer;
@@ -1497,51 +1532,55 @@ h1{
     opacity: 1;
     width: 100%;
     height: 100%;
-} 
+}
+
 .teacher-info h1 {
-	font-size: 18px;
-	margin: 0;
-	line-height: 1;
-	color: #fff;
-	font-weight: 700;
-	margin-bottom: 7px;
-	display: inline-block;
+    font-size: 18px;
+    margin: 0;
+    line-height: 1;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 7px;
+    display: inline-block;
 }
+
 .teacher-info h2 {
-	font-size: 13px;
-	line-height: 1;
-	margin: 0;
-	display: block;
-	color: #DAC495;
-	font-weight: 600;
-	margin-bottom: 5px;
+    font-size: 13px;
+    line-height: 1;
+    margin: 0;
+    display: block;
+    color: #DAC495;
+    font-weight: 600;
+    margin-bottom: 5px;
 }
+
 .teacher-info span {
-	display: block;
-	font-size: 13px;
-	color: #FFF;
-	margin-bottom: 4px;
-	font-weight: 600;
+    display: block;
+    font-size: 13px;
+    color: #FFF;
+    margin-bottom: 4px;
+    font-weight: 600;
 }
+
 .teacher-info {
-	position: absolute;
-	top: 50%;
-	right: 0;
-	left: 0;
-	margin: auto;
-	transform: translateY(-50%);
-	z-index: 999;
-	transition: .6s;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    margin: auto;
+    transform: translateY(-50%);
+    z-index: 999;
+    transition: .6s;
     visibility: hidden;
     opacity: 0;
 }
 
 a.sea-details {
-	font-size: 14px;
-	color: #fff;
-	font-weight: 700;
-	text-decoration: underline;
-	color: #DAC495;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: underline;
+    color: #DAC495;
     animation: pulse 1s infinite;
     transition: .3s;
 }
@@ -1553,10 +1592,103 @@ a.sea-details {
 }
 
 @keyframes pulse {
-  0% {
-    color: #81171B;
-  }
-  100% {
-    color: #fff;
-  }
+    0% {
+        color: #81171B;
+    }
+
+    100% {
+        color: #fff;
+    }
+}
+
+.teacher-another-style .teacher-thumb img {
+    width: 100px;
+    border-radius: 100%;
+    border: 6px solid rgba(238, 238, 238, 0.5);
+    position: relative;
+    cursor: pointer;
+    height: 100px;
+}
+
+.teacher-another-style .teacher-thumb::before {
+    display: none;
+}
+
+.teacher-infos h1 {
+    font-size: 18px;
+    color: #444;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 0px;
+    line-height: 1;
+}
+
+.teacher-infos span {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.teacher-infos h2 {
+    font-size: 13px;
+    color: #808080;
+}
+
+.teacher-infos {
+    padding-left: 20px;
+    padding-top: 0px;
+}
+
+.teacher-another-style {
+    padding: 15px;
+    box-shadow: 0px 0px 6px -3px #AEAEAE;
+    border-radius: 3px;
+}
+
+.teacher-infos address {
+    margin: 0;
+    font-size: ;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.teacher-infos p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.teachers-email {
+    font-size: 14px;
+    display: block;
+    color: #DBC79B;
+}
+/* overlay at start */
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+  opacity: 0;
+  -webkit-backface-visibility: hidden;
+  /* ideally, transition speed should match zoom duration */
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+    opacity: 1;
+}
+.mfp-with-zoom.mfp-ready.mfp-bg {
+    opacity: 0.8;
+}
+
+.mfp-with-zoom.mfp-removing .mfp-container,
+.mfp-with-zoom.mfp-removing.mfp-bg {
+  opacity: 0;
+}
+
+.sign-up-btn-link a {
+	padding: 15px 20px;
+	color: #fff;
+}
+.sign-up-btn-link a:hover {
+	background: #B4334B;
 }

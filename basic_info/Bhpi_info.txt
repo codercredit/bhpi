@@ -1,0 +1,6 @@
+Username:		bhpigov
+Domain Address:		bhpi.gov.bd
+Client Name: 		bhpigov
+
+Primary Domain Name Server(DNS):	ns1.bh-23.webhostbox.net
+Secondary Domain Name Server(DNS):	ns2.bh-23.webhostbox.net

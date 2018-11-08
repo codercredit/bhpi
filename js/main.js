@@ -2,6 +2,12 @@
     "use strict";
 
 
+    // meanmenu
+    $('#mobile-menu').meanmenu({
+        meanMenuContainer: '.mobile-menu',
+        meanScreenWidth: "991"
+    });
+
     // One Page Nav
     var top_offset = $('.header-area').height() - 10;
     $('.main-menu nav ul').onePageNav({
@@ -180,9 +186,13 @@
     /* magnificPopup img view */
     $('.popup-image').magnificPopup({
         type: 'image',
+        removalDelay: 500,
+         mainClass: 'mfp-with-zoom',
         gallery: {
             enabled: true
         }
+        
+        
     });
 
     /* magnificPopup video view */
