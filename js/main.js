@@ -2,6 +2,13 @@
     "use strict";
 
 
+    
+        //custom-pagination
+    $('.student-pagination nav ul li a').click(function () {
+        $('li a').removeClass("active");
+        $(this).addClass("active");
+    });
+    
     // meanmenu
     $('#mobile-menu').meanmenu({
         meanMenuContainer: '.mobile-menu',

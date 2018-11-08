@@ -1169,8 +1169,9 @@ input[type=password]:focus {
 }
 
 .single-stu-info .table thead th {
-    vertical-align: bottom;
-    border-bottom: 0px solid #dee2e6;
+	vertical-align: bottom;
+	border-bottom: 0px solid #dee2e6;
+	border-top: 0;
 }
 
 .single-stu-info .table-view-btn {
@@ -1195,6 +1196,11 @@ input[type=password]:focus {
     color: #444;
 }
 
+.student-pagination .page-link.active {
+	background: #81171B;
+	color: #fff;
+}
+
 
 /* STRUCTURE */
 
@@ -1215,11 +1221,10 @@ input[type=password]:focus {
     padding: 30px;
     position: relative;
     padding: 0px;
-    -webkit-box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
-    box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0px 40px 0 rgba(208, 208, 208, 0.3);
+	border: 0;
     text-align: center;
 }
-
 .student-signup-form {
     -webkit-border-radius: 10px 10px 10px 10px;
     border-radius: 10px 10px 10px 10px;
@@ -1691,4 +1696,35 @@ a.sea-details {
 }
 .sign-up-btn-link a:hover {
 	background: #B4334B;
+}
+
+.btn-ta-view:hover {
+	background: #B4334B;
+}
+.student-thumb img {
+	width: 230px;
+	width: ;
+	height: 230px;
+	border-radius: 100%;
+}
+.student-name {
+	font-size: 15px;
+	margin: 0;
+	color: #444;
+}
+.student-name span {
+	font-weight: 700;
+	font-size: 16px;
+	margin-right: 0;
+	color: #444;
+}
+
+.student-info-view {
+	padding: 40px;
+	box-shadow: 0px 0px 7px 0px #ccc;
+	margin-top: 20px;
+}
+
+.stu-view-db {
+	margin: 0;
 }
