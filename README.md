@@ -1,2 +1,0 @@
-# bhpi
-Bhola Polytechnic Institute

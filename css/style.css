@@ -421,7 +421,6 @@ label {
 
 .main-menu ul li ul.submenu {
     background: #81171B none repeat scroll 0 0;
-    left: 0;
     opacity: 0;
     position: absolute;
     top: 110%;
@@ -440,11 +439,11 @@ label {
 .main-menu ul li ul.submenu li a {
 	color: #fff;
 	display: block;
-	padding: 10px 20px;
+	padding: 13px 20px;
 	text-align: left;
 	font-size: 14px;
 	text-transform: capitalize;
-	font-weight: 600;
+	font-weight: 400;
 	border-bottom: 1px solid #6E0D11;
 }
 
@@ -470,6 +469,12 @@ label {
 
 .mean-container .mean-nav {
 	margin-top: 38px;
+}
+
+/*dropdown*/
+ul.submenu li ul.submenu.submenu2 {
+	right: -100%;
+	top: 0;
 }
 
 /*slider*/
@@ -1727,4 +1732,23 @@ a.sea-details {
 
 .stu-view-db {
 	margin: 0;
+}
+
+.list-of-teacher ul li a {
+	font-size: 15px;
+	color: #777;
+	font-weight: 500;
+	display: block;
+	padding: 12px 0;
+	background: #F5F5F5;
+	border-bottom: 1px solid #E8E8E8;
+    padding-left: 15px;
+}
+
+.list-of-teacher ul li a:hover {
+	background: #E8E8E8;
+	padding-left: 20px;
+}
+.list-of-teacher ul li:last-child a {
+	border: 0;
 }
